@@ -1,0 +1,16 @@
+services:
+  lambda:
+    container_name: lambda
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ./:/app
+    environment:
+      - HOME=/tmp
+
+networks:
+  default:
+    external: true
+    name: uni_network

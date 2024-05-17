@@ -1,0 +1,6 @@
+auth.json
+/vendor/
+.idea
+.bash_history
+/node_modules/
+/example/documento.pdf

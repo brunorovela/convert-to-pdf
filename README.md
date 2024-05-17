@@ -1,4 +1,4 @@
-# Lambda convert-to-pdf-v3
+# Lambda convert-to-pdf
 
 Manual com o objetivo de esclarecer todos os passos que foram executados para criar esse lambda.
 Esse lambda conversor de `docx` para `pdf` foi criado a partir de uma imagem docker fornecida pelo repositório abaixo.
@@ -85,7 +85,7 @@ Após enviar a imagem para o repositório da AWS, executei os passos abaixo na A
     - s3:PutObject
     - s3:DeleteObject
 - Acessei o serviço S3
-  - Criei um bucket chamado `uni-lambda-operacao`
+  - Criei um bucket chamado `rovela`
   - Criei uma pasta chamada `teste`
   - Carreguei um arquivo chamado `documento.docx` dentro da pasta teste. Usei como base o arquivo que está na pasta `example`
 - Acessei o serviço Lambdas
